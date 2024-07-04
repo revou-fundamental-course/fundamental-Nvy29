@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Latihan Web </title>
+        <link rel="stylesheet" href="..\css\style.css">       
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="navigasi" class="logo"> N&N </a>
+
+            <nav class="navbar">
+                <a href="navigasi"> Home </a>
+                <a href="navigasi"> Our Profile </a>
+                <a href="navigasi"> Portofolio </a>
+                <a href="navigasi"> Message Us </a>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h1>Hi, <span id="name">-</span>. Nice to meet you</h1>
+                <h3>Perkenalkan Saya Novian</h3>
+                <p>*Maaf web ini kurang sempurna karena kejar tayang dan sering lembur kerjaan harian*</p>
+            </div>
+        </section>
+        <br>
+        <section class="our profile">
+            <div class="our profile-banner">
+                <h1> halo saya Novian </h1>
+            </div>
+
+        </section>
+
+        <br>
+        <section class="message-us">
+            <div class="message-us-content">
+            <h2>Message Us</h2>
+            </div class="form">
+                <form name="message-form" onsubmit="return validateForm()">
+                    Nama: <input placeholder="Nama" type="text" name="full-name" />
+                    <br/>
+
+                    Tanggal Lahir :
+                    <input type="date" id="birth-date" name="birth-date"/>
+                    <br/>
+
+                    Jenis Kelamin :
+                    <input type="radio" id="male" name="gender" value="male"/>
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <label for="female">Perempuan</label>
+                    <br/>
+
+                    Pesan :
+                    <textarea placeholder="Pesan" name="message"></textarea>
+                    <br/>
+
+                    <input type="submit" value="submit"/>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
